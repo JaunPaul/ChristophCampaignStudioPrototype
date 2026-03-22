@@ -10,15 +10,15 @@
 
 <div class="mx-auto max-w-xl px-6 py-12">
 	<div class="mb-10 text-center">
-		<h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+		<h1 class="mb-4 text-5xl font-extrabold tracking-tight text-white md:text-6xl text-left sm:text-center">
 			AI Landing Page Generator
 		</h1>
-		<p class="text-lg text-gray-600">
+		<p class="text-lg text-tertiary text-left sm:text-center">
 			Describe your ideal landing page and our AI will generate a prototype instantly.
 		</p>
 	</div>
 
-	<div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+	<div class="bg-surface-container-low p-8 shadow-[0_10px_40px_rgba(0,0,0,0.4)] relative">
 		<form
 			method="POST"
 			action="?/generate"
@@ -52,21 +52,21 @@
 			{/if}
 
 			<div>
-				<label for="prompt" class="mb-1 block text-sm font-medium text-gray-700"> Prompt </label>
+				<label for="prompt" class="mb-2 block text-xs font-bold uppercase tracking-widest text-tertiary"> Prompt </label>
 				<textarea
 					id="prompt"
 					name="prompt"
 					rows="4"
 					required
 					placeholder="e.g. A landing page for a new dog walking service in New York..."
-					class="block w-full rounded-md border border-gray-300 p-3 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+					class="input-kinetic resize-none"
 				></textarea>
 			</div>
 
 			<button
 				type="submit"
 				disabled={loading}
-				class="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none disabled:opacity-50"
+				class="btn-primary w-full mt-6"
 			>
 				{loading ? statusMessage : 'Generate AI Page'}
 			</button>

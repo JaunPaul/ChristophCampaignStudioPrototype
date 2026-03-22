@@ -1,1 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --color-surface: #131313;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-lowest: #0e0e0e;
+  
+  --color-primary: #e2183b;
+  --color-secondary: #97ddea;
+  --color-tertiary: #c8c8ca;
+  --color-on-surface: #e5e2e1;
+}
+
+@layer base {
+  body {
+    background-color: #0f0f0f;
+    color: var(--color-on-surface);
+  }
+
+  h1, h2, h3, h4, h5, h6, button {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white rounded-sm px-6 py-3 transition-all duration-200 hover:-translate-y-[2px];
+    box-shadow: 0 4px 14px rgba(226, 24, 59, 0.4);
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-white/20 text-primary rounded-sm px-6 py-3 transition-all duration-200 hover:-translate-y-[2px];
+  }
+
+  .input-kinetic {
+    @apply bg-transparent border-b border-white/30 focus:border-secondary focus:border-b-2 outline-none text-on-surface px-0 py-2 transition-colors w-full sm:text-sm;
+  }
+}
