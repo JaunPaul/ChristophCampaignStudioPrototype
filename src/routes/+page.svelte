@@ -10,7 +10,7 @@
 
 <div class="mx-auto max-w-xl px-6 py-12">
 	<div class="mb-10 text-center">
-		<h1 class="mb-4 text-5xl font-extrabold tracking-tight text-white md:text-6xl text-left sm:text-center">
+		<h1 class="mb-4 text-5xl font-extrabold tracking-tight text-on-surface md:text-6xl text-left sm:text-center">
 			AI Landing Page Generator
 		</h1>
 		<p class="text-lg text-tertiary text-left sm:text-center">

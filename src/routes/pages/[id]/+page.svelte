@@ -14,12 +14,12 @@
 </svelte:head>
 
 <div class="min-h-screen flex flex-col font-sans bg-surface text-on-surface">
-	<header class="bg-surface-container-lowest border-b border-white/5 px-6 py-4 flex justify-between items-center text-sm relative z-50">
+	<header class="bg-surface-container-lowest border-b border-on-surface/10 px-6 py-4 flex justify-between items-center text-sm relative z-50">
 		<div class="flex items-center gap-4 text-tertiary">
 			<a href="/" class="btn-secondary px-3 py-1.5 text-xs">
 				&larr; Back to Generator
 			</a>
-			<span class="text-xs max-w-md truncate bg-surface-container-low px-3 py-1.5 rounded-sm border border-white/5" title={data.pageRecord.prompt}>
+			<span class="text-xs max-w-md truncate bg-surface-container-low px-3 py-1.5 rounded-sm border border-on-surface/10" title={data.pageRecord.prompt}>
 				<span class="font-bold text-secondary mr-2 uppercase tracking-widest">Prompt:</span>
 				{data.pageRecord.prompt}
 			</span>
@@ -36,7 +36,7 @@
 	</main>
 </div>
 
-<div class="fixed bottom-0 left-0 right-0 bg-surface-container-lowest border-t border-white/5 shadow-[0_-10px_40px_rgba(0,0,0,0.6)] p-6 sm:p-8 z-50">
+<div class="fixed bottom-0 left-0 right-0 bg-surface-container-lowest border-t border-on-surface/10 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] p-6 sm:p-8 z-50">
 	<div class="max-w-4xl mx-auto">
 		<form method="POST" action="?/edit" class="flex flex-col sm:flex-row gap-8 items-end w-full relative" use:enhance={() => {
 			loading = true;

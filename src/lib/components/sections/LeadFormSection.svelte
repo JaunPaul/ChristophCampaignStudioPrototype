@@ -5,8 +5,8 @@
 </script>
 
 <section class="bg-surface-container-lowest py-32 px-6">
-	<div class="max-w-2xl mx-auto text-left sm:text-center p-12 bg-surface-container-low shadow-[0_10px_40px_rgba(0,0,0,0.6)] relative z-10 border-t border-white/5">
-		<h2 class="text-4xl font-bold text-white mb-6">
+	<div class="max-w-2xl mx-auto text-left sm:text-center p-12 bg-surface-container-low shadow-[0_10px_40px_rgba(0,0,0,0.1)] relative z-10 border-t border-on-surface/5">
+		<h2 class="text-4xl font-bold text-on-surface mb-6">
 			{section.props.title}
 		</h2>
 		<p class="text-lg text-tertiary mb-16">

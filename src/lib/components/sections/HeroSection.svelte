@@ -4,13 +4,13 @@
 	let { section } = $props<{ section: HeroSection }>();
 </script>
 
-<section class="w-full border-b border-white/10 bg-surface">
+<section class="w-full border-b border-on-surface/10 bg-surface">
 	<div class="grid min-h-[70vh] lg:grid-cols-2">
 		<div
 			class="flex flex-col justify-center space-y-8 px-6 py-24 text-left lg:py-32 lg:pr-16 lg:pl-20 xl:pl-32"
 		>
 			<h1
-				class="text-4xl leading-none font-extrabold tracking-tight text-white md:text-5xl md:leading-[1.1]"
+				class="text-4xl leading-none font-extrabold tracking-tight text-on-surface md:text-5xl md:leading-[1.1]"
 			>
 				{section.props.headline}
 			</h1>
